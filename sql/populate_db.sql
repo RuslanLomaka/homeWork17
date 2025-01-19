@@ -20,16 +20,16 @@ VALUES
 
 INSERT INTO client (ID, NAME)
 VALUES
-(314159, 'Harvard University'),       -- π (Pi)
-(27315, 'NASA'),                      -- Absolute zero temperature (-273.15°C)
-(65536, 'Google'),                    -- 2^16
-(299792, 'SpaceX'),                   -- Speed of light in km/s
-(4200, 'Oxford University'),          -- "42" multiplied for fun
-(90210, 'Stanford University'),       -- Famous ZIP code
-(112358, 'Cambridge University'),     -- Fibonacci sequence
-(101010, 'Apple Inc.'),               -- Binary joke
-(808, 'Tesla, Inc.'),                 -- BOB
-(271828, 'MIT');                      -- Euler's number (e)
+(314159, 'Harvard University'),
+(27315, 'NASA'),
+(65536, 'Google'),
+(299792, 'SpaceX'),
+(4200, 'Oxford University'),
+(90210, 'Stanford University'),
+(112358, 'Cambridge University'),
+(101010, 'Apple Inc.'),
+(808, 'Tesla, Inc.'),
+(271828, 'MIT');
 
 INSERT INTO project (ID, CLIENT_ID, NAME, START_DATE, FINISH_DATE)
 VALUES
@@ -52,78 +52,73 @@ VALUES
 
 INSERT INTO project_worker (PROJECT_ID, WORKER_ID)
 VALUES
--- Pi Number Calculation
-(22816, 1), -- Neil deGrasse Tyson
-(22816, 5), -- George Boole
-(22816, 13), -- Barbara Liskov
 
--- Manhattan Project
-(31415, 2), -- Marie Curie
-(31415, 3), -- J. Robert Oppenheimer
-(31415, 11), -- Stephen Hawking
-
--- Turing Machine Development
-(17345, 6), -- Alan Turing
-(17345, 12), -- Claude Shannon
-
--- Voyager Space Mission
-(11235, 8), -- Richard Feynman
-(11235, 4), -- Carl Sagan
-(11235, 7), -- Ada Lovelace
-(11235, 10), -- Grace Hopper
-
--- Infinity Calculation (ongoing project)
-(40404, 9), -- Tim Berners-Lee
-(40404, 14), -- Donald Knuth
-
--- Division by Zero Research
-(27182, 5), -- George Boole
-(27182, 3), -- J. Robert Oppenheimer
-
--- Doomsday Device Planning
-(66666, 11), -- Stephen Hawking
-(66666, 8), -- Richard Feynman
-(66666, 1), -- Neil deGrasse Tyson
-
--- Perpetual Motion Machine Design
-(77777, 2), -- Marie Curie
-(77777, 4), -- Carl Sagan
-(77777, 6), -- Alan Turing
-
--- Flat Earth Cartography
-(42000, 15), -- Katherine Johnson
-(42000, 10), -- Grace Hopper
-
--- Cats and Quantum Physics
-(55555, 7), -- Ada Lovelace
-(55555, 13), -- Barbara Liskov
-(55555, 14), -- Donald Knuth
-
--- Artificial Intelligence Research
-(90211, 9), -- Tim Berners-Lee
-(90211, 12), -- Claude Shannon
-(90211, 15), -- Katherine Johnson
-
--- Cryptography Evolution
-(12345, 5), -- George Boole
-(12345, 3), -- J. Robert Oppenheimer
-(12345, 8), -- Richard Feynman
-
--- Mars Rover Exploration
-(29979, 2), -- Marie Curie
-(29979, 4), -- Carl Sagan
-(29979, 11), -- Stephen Hawking
-
--- Time Travel Feasibility Study
-(18182, 1), -- Neil deGrasse Tyson
-(18182, 6), -- Alan Turing
-(18182, 14), -- Donald Knuth
-
--- Human Genome Project
-(99999, 13), -- Barbara Liskov
-(99999, 7), -- Ada Lovelace
-(99999, 10), -- Grace Hopper
-(99999, 15); -- Katherine Johnson
+(22816, 1),
+(22816, 5),
+(22816, 13),
 
 
---SELECT * FROM worker;SELECT * FROM client;SELECT * FROM project;SELECT * FROM project_worker;
+(31415, 2),
+(31415, 3),
+(31415, 11),
+
+
+(17345, 6),
+(17345, 12),
+
+
+(11235, 8),
+(11235, 4),
+(11235, 7),
+(11235, 10),
+
+
+(40404, 9),
+(40404, 14),
+
+
+(27182, 5),
+(27182, 3),
+
+
+(66666, 11),
+(66666, 8),
+(66666, 1),
+
+(77777, 2),
+(77777, 4),
+(77777, 6),
+
+
+(42000, 15),
+(42000, 10),
+
+
+(55555, 7),
+(55555, 13),
+(55555, 14),
+
+
+(90211, 9),
+(90211, 12),
+(90211, 15),
+
+
+(12345, 5),
+(12345, 3),
+(12345, 8),
+
+(29979, 2),
+(29979, 4),
+(29979, 11),
+
+
+(18182, 1),
+(18182, 6),
+(18182, 14),
+
+
+(99999, 13),
+(99999, 7),
+(99999, 10),
+(99999, 15);
