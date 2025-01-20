@@ -9,6 +9,8 @@ public class App {
 
         DatabaseQueryService queryService = new DatabaseQueryService();
 
+        long startTime = System.currentTimeMillis();
+
         // Max Project Count Clients
         List<MaxProjectCountClient> clientsWithMaxProjectCounts = queryService.findMaxProjectCountClients();
         System.out.println("Clients with Max Project Counts:");
@@ -43,6 +45,8 @@ public class App {
         for (ProjectPrice projectPrice : projectPrices) {
             System.out.println(projectPrice);
         }
+        long endTime = System.currentTimeMillis();
+        System.out.println("Execution Time: " + (endTime - startTime) + "ms");
 
     }
 }
